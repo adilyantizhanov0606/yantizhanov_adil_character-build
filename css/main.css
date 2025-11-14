@@ -1,0 +1,149 @@
+.hidden { 
+    display: none; 
+}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+header {
+    background-color: rgb(255, green, blue);
+    padding: 10px 0; 
+}
+
+#main-logo { 
+    width: 300px; 
+    display: block;
+    margin: 0 auto;
+}
+
+#character_nav {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(90, 0, 0);
+    background-image: url('../images/heroes_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+#characters { 
+    list-style-type: none; 
+    padding: 0;
+    text-align: center;
+}
+
+#characters li { 
+    display: inline;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+#characters li img {
+    padding: 10px;
+    border: solid 2px orange;
+    transition: all .3s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px ;
+}
+
+#characters li a { 
+    text-decoration: none; 
+}
+
+#characters li img:hover { 
+    filter:brightness(1.5);
+    border-radius: 100%;
+}
+
+#instructions { 
+    padding: 20px; 
+}
+
+#instructions h3  {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+#instructions p {  
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#main-footer {
+    height: 80px;
+    background-color:rgb(178, 0, 0);
+}
+
+
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 70vh;
+    background-position: 40px bottom;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+#lightbox1 {
+    background-image: url(../images/james_lb_bg.png);
+}
+
+#lightbox2 {
+    background-image: url(../images/dave_lb_bg.png);
+}
+
+#lightbox3 {
+    background-image: url(../images/kerry_lb_bg.png);
+}
+
+#lightbox4 {
+    background-image: url(../images/ian_lb_bg.png);
+}
+
+.lightbox-close {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 90vw;
+    transition: all .5s ease-in-out;
+}
+
+.lightbox-close:hover {
+    color: red;
+}
+
+.lightbox section {
+    width: 500px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.lb-heading {
+    font-size: 50px;
+}
+
+.lightbox p {
+    line-height: 26px;
+}
